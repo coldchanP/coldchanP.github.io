@@ -54,6 +54,12 @@
             color: #666;
             margin-bottom: 25px;
         }
+        .author-notes {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #777;
+            margin-bottom: 25px;
+        }
 
         /* 링크 버튼 영역 */
         .links {
@@ -200,19 +206,22 @@ Lightweight Medical Image Classification</p>
             Seongchan Park<sup>1</sup>,
             Jinbin Kim<sup>1</sup>,
             Seunghyun Lee<sup>1</sup>,
-            Soonchul Kwon<sup>1</sup>,
+            Soonchul Kwon<sup>1, *</sup>
         </div>
 
         <div class="affiliations">
             <sup>1</sup>Kwangwoon University, Seoul, South Korea
         </div>
 
+        <div class="author-notes">
+            <sup>*</sup>Corresponding Author
+        </div>
 
         <p class="intro-text">
             EfficientMedFormer is A Medical Image Diagnosis Model for Edge Devices Incorporating Low-Computational Directional Decomposition Attention.
         </p>
 
-        <img src="imgs/fig1.png" alt="compelxity" class="project-image">
+        <img src="imgs/fig1.png" alt="compelxity" class="project-image", style="max-width: 400px;">
         <p class="caption">Figure 1: A comparative analysis of computational efficiency
                             among commonly used medical image classification models
                             has revealed that the proposed EfficientMedFormer offers
@@ -382,18 +391,18 @@ Lightweight Medical Image Classification</p>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td class="method-col">ResNet-18 [b18]</td><td>11.1</td><td>1.81</td><td><u>10.1</u></td><td>98.8</td><td>132.1</td><td>21.9</td></tr>
-                        <tr><td class="method-col">ResNet-50 [b18]</td><td>23.5</td><td>4.11</td><td>20.9</td><td>281.2</td><td>391.4</td><td>29.7</td></tr>
-                        <tr><td class="method-col">DenseNet-121 [b47]</td><td>6.91</td><td>2.88</td><td>24.1</td><td>253.6</td><td>299.7</td><td>33.4</td></tr>
-                        <tr><td class="method-col">EfficientNet-B4 [b48]</td><td>17.5</td><td>1.50</td><td>24.9</td><td>301.5</td><td>261.8</td><td>38.8</td></tr>
-                        <tr><td class="method-col">MobileNetv4-S [mobilenetv4]</td><td>2.47</td><td><b>0.18</b></td><td><b>9.72</b></td><td><b>77.3</b></td><td><u>76.9</u></td><td><b>14.8</b></td></tr>
-                        <tr><td class="method-col">EdgeNeXt-XS [p3]</td><td><b>2.14</b></td><td>0.41</td><td>11.7</td><td>97.6</td><td>114.2</td><td>20.1</td></tr>
-                        <tr><td class="method-col">ViT-B/16 [b7]</td><td>85.8</td><td>16.8</td><td>68.5</td><td>564.5</td><td>932.1</td><td>47.6</td></tr>
-                        <tr><td class="method-col">MobileViTv2-0.75 [p2]</td><td>2.46</td><td>0.80</td><td>13.2</td><td>153.6</td><td>169.7</td><td>25.4</td></tr>
-                        <tr><td class="method-col">MedViTV1-T [b28]</td><td>31.1</td><td>5.93</td><td>52.1</td><td>603.8</td><td>652.8</td><td>29.3</td></tr>
-                        <tr><td class="method-col">MedViTV1-S [b28]</td><td>44.4</td><td>8.41</td><td>59.6</td><td>813.7</td><td>915.1</td><td>41.6</td></tr>
-                        <tr><td class="method-col">MedViTV2-T [b10]</td><td>11.3</td><td>1.47</td><td>1092.1</td><td>3069.5</td><td>1682.3</td><td>37.7</td></tr>
-                        <tr><td class="method-col">MedViTV2-S [b10]</td><td>29.5</td><td>1.84</td><td>1163.1</td><td>3352.3</td><td>1804.1</td><td>52.7</td></tr>
+                        <tr><td class="method-col">ResNet-18 </td><td>11.1</td><td>1.81</td><td><u>10.1</u></td><td>98.8</td><td>132.1</td><td>21.9</td></tr>
+                        <tr><td class="method-col">ResNet-50 </td><td>23.5</td><td>4.11</td><td>20.9</td><td>281.2</td><td>391.4</td><td>29.7</td></tr>
+                        <tr><td class="method-col">DenseNet-121 </td><td>6.91</td><td>2.88</td><td>24.1</td><td>253.6</td><td>299.7</td><td>33.4</td></tr>
+                        <tr><td class="method-col">EfficientNet-B4 </td><td>17.5</td><td>1.50</td><td>24.9</td><td>301.5</td><td>261.8</td><td>38.8</td></tr>
+                        <tr><td class="method-col">MobileNetv4-S </td><td>2.47</td><td><b>0.18</b></td><td><b>9.72</b></td><td><b>77.3</b></td><td><u>76.9</u></td><td><b>14.8</b></td></tr>
+                        <tr><td class="method-col">EdgeNeXt-XS </td><td><b>2.14</b></td><td>0.41</td><td>11.7</td><td>97.6</td><td>114.2</td><td>20.1</td></tr>
+                        <tr><td class="method-col">ViT-B/16 </td><td>85.8</td><td>16.8</td><td>68.5</td><td>564.5</td><td>932.1</td><td>47.6</td></tr>
+                        <tr><td class="method-col">MobileViTv2-0.75 </td><td>2.46</td><td>0.80</td><td>13.2</td><td>153.6</td><td>169.7</td><td>25.4</td></tr>
+                        <tr><td class="method-col">MedViTV1-T </td><td>31.1</td><td>5.93</td><td>52.1</td><td>603.8</td><td>652.8</td><td>29.3</td></tr>
+                        <tr><td class="method-col">MedViTV1-S </td><td>44.4</td><td>8.41</td><td>59.6</td><td>813.7</td><td>915.1</td><td>41.6</td></tr>
+                        <tr><td class="method-col">MedViTV2-T </td><td>11.3</td><td>1.47</td><td>1092.1</td><td>3069.5</td><td>1682.3</td><td>37.7</td></tr>
+                        <tr><td class="method-col">MedViTV2-S </td><td>29.5</td><td>1.84</td><td>1163.1</td><td>3352.3</td><td>1804.1</td><td>52.7</td></tr>
                         <tr class="ours-row"><td class="method-col">Ours</td><td><u>2.39</u></td><td><u>0.28</u></td><td>11.3</td><td><u>79.4</u></td><td><b>74.6</b></td><td><u>16.5</u></td></tr>
                     </tbody>
                 </table>
